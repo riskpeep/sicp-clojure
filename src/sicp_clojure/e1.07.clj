@@ -38,6 +38,8 @@
 (defn sqrt [x]
   (sqrt-iter 1.0 x))
 
+(sqrt 5)
+
 ;; For small numbers (i.e. smaller than 1), the square of the
 ;; number is less than the original number.  As guess numbers approach zero,
 ;; the square rapidly becomes small.  In this case, good-enough? will be

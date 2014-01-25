@@ -42,3 +42,11 @@
 ;; 9
 ;;
 ;; This is an iterative process.
+
+;; Re-writing both functions in clojure yields
+(defn + [a b]
+   (if (= a 0) b (inc (+ (dec a) b))))
+
+(defn + [a b]
+   (if (= a 0) b (+ (dec a) (inc b))))
+
